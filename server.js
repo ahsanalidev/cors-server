@@ -6,7 +6,8 @@ const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 8080;
 
 corsProxy.createServer({
-    originWhitelist: ['http://localhost:3000', 'https://portfolio-ravenous.herokuapp.com'],
+    originWhitelist: ['http://localhost:3000','http://localhost:50906','http://localhost:53281',
+'https://coinhomes.netlify.app' ],
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']
 }).listen(port, host, () => {
