@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 
 corsProxy.createServer({
     originWhitelist: ['http://localhost:3000', 'https://coinhomes.netlify.app', 'https://coinhomes-17f58.firebaseapp.com', 'https://coinhomes.io',
-     'http://localhost:60743'],
+     'http://localhost:62567'],
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']
 }).listen(port, host, () => {
